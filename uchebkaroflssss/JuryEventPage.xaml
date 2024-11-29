@@ -1,0 +1,16 @@
+﻿<Page x:Class="uchebkaroflssss.JuryEventPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:uchebkaroflssss"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="JuryEventPage">
+
+    <Grid>
+        <ListBox x:Name="LB_Events" DisplayMemberPath="EventName" Margin="10" SelectionChanged="LB_Events_SelectionChanged" />
+        <TextBox x:Name="TB_EventScore" Text="Введите оценку" Margin="10,0,10,50" VerticalAlignment="Bottom" />
+        <Button Content="Оценить" Click="BN_RateEvent_Click" Margin="10,0,10,20" VerticalAlignment="Bottom" />
+    </Grid>
+</Page>

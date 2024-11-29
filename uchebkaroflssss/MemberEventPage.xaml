@@ -1,0 +1,46 @@
+﻿<Page x:Class="uchebkaroflssss.MemberEventPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:uchebkaroflssss"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UsessrEventPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="68*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="TB_CurrentUser" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Button Grid.Column="1" Content="Выйти"  Margin="0,21,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="96.0866666666667" Click="Button_Click"/>
+            <Button Grid.Column="1" Content="Сменить аккаунт" Margin="3,21,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_1"/>
+            <Button x:Name="BN_UpdateProfile" Content="Обновить профиль" />
+            <Button x:Name="BN_ShowCurrentEvent"  Grid.Column="2" Content="Мероприятие" Click="BN_ShowCurrentEvent_Click" />
+        </Grid>
+        <TextBox x:Name="TB_UserFIO" HorizontalAlignment="Left" Margin="209,170,0,0" Grid.Row="1" TextWrapping="Wrap" Text="FIO" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_UserEmail" HorizontalAlignment="Left" Margin="209,219,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_UserDateBirth" HorizontalAlignment="Center" Margin="0,170,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Birth" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name ="TB_UserPhoneNumber" HorizontalAlignment="Center" Margin="0,219,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_UserLogin" HorizontalAlignment="Left" Margin="471,170,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_UserPassword" HorizontalAlignment="Left" Margin="471,219,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Pass" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name ="BN_UserInfoSave" Content="Сохранить" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Grid.Row="1" Height="18" Width="68" Click="BN_UserInfoSave_Click"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="250,145,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Электронная почта" HorizontalAlignment="Left" Margin="210,194,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Center" Margin="0,145,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Номер телефона" HorizontalAlignment="Center" Margin="0,193,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Номер телефона" HorizontalAlignment="Center" Margin="0,193,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="505,193,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="509,145,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.596,0.156"/>
+        <Label Content="Информация о пользователе" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" FontSize="10" Margin="0,122,0,0" RenderTransformOrigin="0.94,0.815"/>
+        <TextBlock x:Name="TB_DescFromModer"  HorizontalAlignment="Center" Margin="0,306,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="75" Width="283"/>
+        <Label Content="Сообщение от модератора" HorizontalAlignment="Center" Margin="0,275,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

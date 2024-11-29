@@ -1,0 +1,51 @@
+﻿<Page x:Class="uchebkaroflssss.Auth"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:uchebkaroflssss"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Auth">
+
+    <Grid Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <MediaElement x:Name="ME_BackgroundVideo" Visibility="Visible" Source="..\uchebkaroflssss\src\media\hexagon.mp4" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" CornerRadius="11,11,11,11">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock TextWrapping="Wrap" Text="Авторизация" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="TB_Login"  HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Center" Width="120" GotFocus="TB_Login_GotFocus"/>
+                    <TextBox x:Name="TB_Password" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="120" Margin="0,8,0,0" GotFocus="TB_Password_GotFocus"/>
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="BN_Auth" Background="Transparent" BorderBrush="Transparent" Content="Вход" VerticalAlignment="Center" Click="BN_Auth_Click" Height="37"/>
+                        <Button x:Name="BN_Reg" Background="Transparent" BorderBrush="Transparent" Content="Регистрация" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="37" Margin="132,0,0,0" Click="BN_Reg_Click"/>
+                    </Grid>
+                </Grid>
+            </Border>
+            <Button Grid.Column="2" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="26" Click="Button_Click"/>
+
+
+        </Grid>
+    </Grid>
+</Page>
